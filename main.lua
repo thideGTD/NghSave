@@ -754,7 +754,7 @@ if response.Success then
         task.spawn(Load)
         Mainrs()
     else
-        game:kick("Chưa Nhập Key Hoặc Key Sai")
+        game.Players.LocalPlayer:kick("Chưa Nhập Key Hoặc Key Sai")
     end
 else
     warn("Lỗi kết nối: " .. response.StatusCode)
